@@ -1,70 +1,195 @@
-# Getting Started with Create React App
+<a id="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- TABLE OF CONTENTS -->
 
-## Available Scripts
+<details>
+  <summary><h1>📗 Table of Contents</h1></summary>
+  <ul>
+    <li><a href="#about-project">📖 About the Project</a>
+      <ul>
+        <li><a href="#built-with">🛠 Built With</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="#key-features">Key Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#live-demo">🚀 Live Demo</a></li>
+    <li><a href="#getting-started">💻 Getting Started</a>
+      <ul>
+        <li><a href="#setup">Setup</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#run-tests">Run tests</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+      </ul>
+    </li>
+    <li><a href="#authors">👥 Authors</a></li>
+    <li><a href="#future-features">🔭 Future Features</a></li>
+    <li><a href="#contributing">🤝 Contributing</a></li>
+    <li><a href="#support">⭐️ Show your support</a></li>
+    <li><a href="#acknowledgements">🙏 Acknowledgements</a></li>
+    <li><a href="#license">📝 License</a></li>
+  </ul>
+</details>
 
-In the project directory, you can run:
+<!-- PROJECT DESCRIPTION -->
 
-### `npm start`
+# 📖 Math Magicians <a id="about-project"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Math Magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Built With <a id="built-with"></a>
 
-### `npm test`
+### Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* HTML
+* CSS
+* Javascript
+* React
 
-### `npm run build`
+<!-- Features -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Key Features
+* Use of React.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- LIVE DEMO -->
 
-### `npm run eject`
+## 🚀 Live Demo <a id="live-demo"></a>
+* Cooming soon.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 💻 Getting Started <a id="getting-started"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+In order to run this project you need to have:
 
-## Learn More
+- A Text Editor.
+- A Browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Setup
+To clone this repository to your desired folder, run the following command: <br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+git clone git@github.com:Luffytaro22/Math-Magicians.git
+```
 
-### Code Splitting
+### Install
+```
+ npm install
+```
+<details>
+<summary>This will download all this dependencies:</summary>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Install Webpack <br>
+```
+  npm install webpack webpack-cli --save-dev
+```
 
-### Analyzing the Bundle Size
+* Install style and css loader <br>
+```
+  npm install --save-dev style-loader css-loader
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Install HTML Webpack plugin <br>
+```
+  npm install --save-dev html-webpack-plugin
+```
 
-### Making a Progressive Web App
+* Install Webpack-dev-server <br>
+```
+  npm install --save-dev webpack-dev-server
+```
+* Install Jest <br>
+```
+  npm install --save-dev jest
+```
+* Install Webhint <br>
+```
+  npm install --save-dev hint@7.x
+```
+* Install Stylelint <br>
+```
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
+* Install ESLint <br>
+```
+  npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
+```
+* Install Babel <br>
+```
+  npm install --save-dev babel-jest @babel/core @babel/preset-env`
+```
+</details>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Usage
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Initialize it with <br>
+```
+npm start
+```
 
 ### Deployment
+Cooming soon.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- AUTHORS -->
+
+## 👥 Authors <a id="authors"></a>
+
+👤 **Manuel Sánchez**
+
+- GitHub: [@githubhandle](https://github.com/Luffytaro22)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/manuel-alejandro-sanchez-sierra-4b358b14a/)
+- Twitter: [@twitterhandle](https://twitter.com/Luffytaro_san22)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a id="future-features"></a>
+* Content.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a id="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a id="support"></a>
+If you like this project please give it a star ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a id="acknowledgements"></a>
+
+I would like to give credits to the following:
+* **Microverse** for this readme template.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a id="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
