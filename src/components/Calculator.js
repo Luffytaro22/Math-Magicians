@@ -1,27 +1,40 @@
+/* eslint-disable react/prop-types */
+import React from 'react';
+
+// Child component
+function CalculatorButton({ className, text, id }) {
+  return (
+    <button type="button" className={className} id={id}>
+      {text}
+    </button>
+  );
+}
+
+// Main calculator component
 export default function Calculator() {
   return (
     <div id="calculator-container">
       <div id="result">0</div>
       <div id="operations-container">
-        <button type="button" className="operations">AC</button>
-        <button type="button" className="operations">+/-</button>
-        <button type="button" className="operations">%</button>
-        <button type="button" className="operations right-operations">÷</button>
-        <button type="button" className="operations">7</button>
-        <button type="button" className="operations">8</button>
-        <button type="button" className="operations">9</button>
-        <button type="button" className="operations right-operations">x</button>
-        <button type="button" className="operations">4</button>
-        <button type="button" className="operations">5</button>
-        <button type="button" className="operations">6</button>
-        <button type="button" className="operations right-operations">-</button>
-        <button type="button" className="operations">1</button>
-        <button type="button" className="operations">2</button>
-        <button type="button" className="operations">3</button>
-        <button type="button" className="operations right-operations">+</button>
-        <button type="button" className="operations" id="zero-button">0</button>
-        <button type="button" className="operations">.</button>
-        <button type="button" className="operations right-operations">=</button>
+        <CalculatorButton className="operations" text="AC" />
+        <CalculatorButton className="operations" text="+/-" />
+        <CalculatorButton className="operations" text="%" />
+        <CalculatorButton className="operations right-operations" text="÷" />
+        <CalculatorButton className="operations" text="7" />
+        <CalculatorButton className="operations" text="8" />
+        <CalculatorButton className="operations" text="9" />
+        <CalculatorButton className="operations right-operations" text="x" />
+        <CalculatorButton className="operations" text="4" />
+        <CalculatorButton className="operations" text="5" />
+        <CalculatorButton className="operations" text="6" />
+        <CalculatorButton className="operations right-operations" text="-" />
+        <CalculatorButton className="operations" text="1" />
+        <CalculatorButton className="operations" text="2" />
+        <CalculatorButton className="operations" text="3" />
+        <CalculatorButton className="operations right-operations" text="+" />
+        <CalculatorButton className="operations" id="zero-button" text="0" />
+        <CalculatorButton className="operations" text="." />
+        <CalculatorButton className="operations right-operations" text="=" />
       </div>
     </div>
   );
