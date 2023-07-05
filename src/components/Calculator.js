@@ -14,10 +14,20 @@ function CalculatorButton({
       ...operation,
     }));
 
-    console.log(operation);
-    console.log(obj);
     const result = document.getElementById('result');
+    // If there's a zero, update the content.
+    if (result.textContent === '0') {
+      result.textContent = '';
+    }
+    // Concat the operations.
     result.textContent += event.target.textContent;
+    // If the user press equal, display the result.
+    if (event.target.textContent === '=') {
+      result.textContent = '';
+      result.textContent = operation.total || '0';
+    } else if (event.target.textContent === 'AC') {
+      result.textContent = '0';
+    }
   };
 
   return (
