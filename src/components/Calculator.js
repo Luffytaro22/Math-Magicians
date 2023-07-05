@@ -3,17 +3,22 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 // Child component
-function CalculatorButton({
-  className, text, id,
-}) {
-  const obj = useState({ total: '', next: '', operation: '' });
+function CalculatorButton({ className, text, id }) {
+  const [obj, setObj] = useState({ total: null, next: null, operation: null });
 
   const handleClick = (event) => {
-    const operationResult = calculate(obj, event.target.textContent).total;
-    console.log(calculate(obj, event.target.textContent));
-    console.log(operationResult);
+    const operation = calculate(obj, event.target.textContent);
+
+    setObj({
+      total: operation.total,
+      next: operation.next,
+      operation: operation.operation,
+    });
+
+    console.log(operation);
+    console.log(obj);
     const result = document.getElementById('result');
-    result.textContent = operationResult;
+    result.textContent += event.target.textContent;
   };
 
   return (
