@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
 // Child component
@@ -36,3 +36,15 @@ export default function CalculatorButton({
     </button>
   );
 }
+
+CalculatorButton.propTypes = {
+  className: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  obj: PropTypes.shape({
+    total: PropTypes.string,
+    next: PropTypes.string,
+    operation: PropTypes.string,
+  }).isRequired,
+  setObj: PropTypes.func.isRequired,
+};
