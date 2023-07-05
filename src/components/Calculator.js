@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import calculate from '../logic/calculate';
 
 // Child component
 function CalculatorButton({ className, text, id }) {
