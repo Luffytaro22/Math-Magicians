@@ -13,6 +13,7 @@ export default function APIRequest() {
           method: 'GET',
           headers: {
             'X-Api-Key': 'zfT6CgCuL8N7cYDDfQd6JQ==1VWPQ1MrEGMEayon',
+            'Content-type': 'application/json; charset=UTF-8',
           },
         });
         const json = await response.json();
@@ -35,8 +36,12 @@ export default function APIRequest() {
 
   return (
     <div id="quote-container">
-      <h2>{data[0].quote}</h2>
-      <p>{data[0].author}</p>
+      {data.length > 0 && (
+      <>
+        <h2>{data[0].quote}</h2>
+        <p>{data[0].author}</p>
+      </>
+      )}
     </div>
   );
 }
