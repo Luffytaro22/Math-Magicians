@@ -3,8 +3,10 @@ import APIRequest from './components/quoteAPI';
 
 function App() {
   return (
-    <Calculator />,
+    <>
+      <Calculator />
       <APIRequest />
+    </>
   );
 }
 
