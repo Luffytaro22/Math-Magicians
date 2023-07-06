@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function APIRequest() {
+export default function APIRequest() {
   const [data, setData] = useState([]);
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -24,4 +24,19 @@ function APIRequest() {
     };
     fetchData();
   }, [setData, setIsLoading]);
+
+  if (hasError) {
+    return <div>Something went wrong!</div>;
+  }
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div id="quote-container">
+      <h2>{data[0].quote}</h2>
+      <p>{data[0].author}</p>
+    </div>
+  );
 }
