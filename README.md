@@ -42,15 +42,17 @@
 
 ### Tech Stack
 
-* HTML
-* CSS
+* HTML5
+* CSS3
 * Javascript
-* React
+* React.js
 
 <!-- Features -->
 
 ### Key Features
-* Use of React.
+* Calculator operations logic.
+* Use of React components, props, useState, and useEffect.
+* Fetch data from an API.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +157,9 @@ Cooming soon.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a id="future-features"></a>
-* Content.
+* Separate the content in different pages.
+* Improve styles and animations.
+* Improve calculator operations logic.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
