@@ -13,13 +13,15 @@ function APIRequest() {
           method: 'GET',
           headers: {
             'X-Api-Key': 'zfT6CgCuL8N7cYDDfQd6JQ==1VWPQ1MrEGMEayon',
-          }
+          },
         });
         const json = await response.json();
         setData(json);
       } catch (error) {
         setHasError(true);
       }
+      setIsLoading(false);
     };
-  });
+    fetchData();
+  }, [setData, setIsLoading]);
 }
