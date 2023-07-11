@@ -11,7 +11,7 @@ const links = [
     text: 'Calculator',
   },
   {
-    poath: 'quotes',
+    path: 'quotes',
     text: 'Quotes',
   },
 ];
