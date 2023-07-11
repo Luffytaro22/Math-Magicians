@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import React from 'react';
+import styles from '../styles/navBar.module.css';
 
 const links = [
   {
@@ -19,22 +20,18 @@ const links = [
 export default function NavBar() {
   return (
     <>
-      <header style={{
-        display: 'flex',
-        justifyContent: 'space-around',
-      }}
-      >
+      <div className={styles.divlink}>
         <h1>Math Magicians</h1>
         <nav id="nav-bar">
-          <ul id="nav-ul">
+          <ul id="nav-ul" className={styles.navul}>
             {links.map((link) => (
-              <li className="ul-links" key={link.text}>
+              <li className={styles.ulinks} key={link.text}>
                 <NavLink to={link.path}>{link.text}</NavLink>
               </li>
             ))}
           </ul>
         </nav>
-      </header>
+      </div>
       <div id="outlet">
         <Outlet />
       </div>
