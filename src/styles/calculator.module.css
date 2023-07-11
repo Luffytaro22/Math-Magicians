@@ -1,0 +1,9 @@
+.calculator {
+  display: flex;
+  width: calc(100vw - 80px);
+  justify-content: space-between;
+}
+
+.calculator h2 {
+  margin: 0;
+}

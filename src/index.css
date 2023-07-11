@@ -83,3 +83,7 @@ code {
 .right-operations {
   background-color: orange;
 }
+
+#outlet {
+  padding: 0 40px;
+}

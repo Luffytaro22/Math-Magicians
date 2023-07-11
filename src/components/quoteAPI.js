@@ -38,8 +38,13 @@ export default function APIRequest() {
     <div id="quote-container">
       {data.length > 0 && (
       <>
-        <h2>{data[0].quote}</h2>
-        <p>{data[0].author}</p>
+        <h2>
+          {data[0].quote}
+          <span>
+            -
+            {data[0].author}
+          </span>
+        </h2>
       </>
       )}
     </div>
