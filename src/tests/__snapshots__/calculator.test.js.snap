@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clears result on "AC" button click 1`] = `
+<div
+  id="result"
+>
+  0
+</div>
+`;
+
+exports[`handles division by zero 1`] = `
+<div
+  id="result"
+>
+  Can't divide by 0.
+</div>
+`;
+
+exports[`renders Calculator correctly 1`] = `
+<div>
+  <div
+    id="calculator-container"
+  >
+    <div
+      id="result"
+    >
+      0
+    </div>
+    <div
+      id="operations-container"
+    >
+      <button
+        class="operations"
+        id="AC"
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        class="operations"
+        id="+/-"
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        class="operations"
+        id="%"
+        type="button"
+      >
+        %
+      </button>
+      <button
+        class="operations right-operations"
+        id="÷"
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        class="operations"
+        id="7"
+        type="button"
+      >
+        7
+      </button>
+      <button
+        class="operations"
+        id="8"
+        type="button"
+      >
+        8
+      </button>
+      <button
+        class="operations"
+        id="9"
+        type="button"
+      >
+        9
+      </button>
+      <button
+        class="operations right-operations"
+        id="x"
+        type="button"
+      >
+        x
+      </button>
+      <button
+        class="operations"
+        id="4"
+        type="button"
+      >
+        4
+      </button>
+      <button
+        class="operations"
+        id="5"
+        type="button"
+      >
+        5
+      </button>
+      <button
+        class="operations"
+        id="6"
+        type="button"
+      >
+        6
+      </button>
+      <button
+        class="operations right-operations"
+        id="-"
+        type="button"
+      >
+        -
+      </button>
+      <button
+        class="operations"
+        id="1"
+        type="button"
+      >
+        1
+      </button>
+      <button
+        class="operations"
+        id="2"
+        type="button"
+      >
+        2
+      </button>
+      <button
+        class="operations"
+        id="3"
+        type="button"
+      >
+        3
+      </button>
+      <button
+        class="operations right-operations"
+        id="+"
+        type="button"
+      >
+        +
+      </button>
+      <button
+        class="operations"
+        id="zero-button"
+        type="button"
+      >
+        0
+      </button>
+      <button
+        class="operations"
+        id="."
+        type="button"
+      >
+        .
+      </button>
+      <button
+        class="operations right-operations"
+        id="="
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`updates result on button click 1`] = `
+<div
+  id="result"
+>
+  3
+</div>
+`;
