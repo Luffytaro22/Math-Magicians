@@ -59,7 +59,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a id="live-demo"></a>
-* Cooming soon.
+[Live demo](https://math-magicians-olive.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +137,7 @@ npm start
 ```
 
 ### Deployment
-Cooming soon.
+You can deploy the project with [this link](https://math-magicians-olive.vercel.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -157,7 +157,6 @@ Cooming soon.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a id="future-features"></a>
-* Separate the content in different pages.
 * Improve styles and animations.
 * Improve calculator operations logic.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
